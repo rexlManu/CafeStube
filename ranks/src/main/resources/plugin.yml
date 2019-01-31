@@ -1,0 +1,7 @@
+name: Ranks
+author: rexlManu
+main: me.rexlmanu.ranks.Ranks
+version: 1.0
+commands:
+  ranks:
+  tablist:

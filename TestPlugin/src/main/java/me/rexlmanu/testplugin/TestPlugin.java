@@ -1,0 +1,30 @@
+/*
+ * © Copyright - Emmanuel Lampe aka. rexlManu 2019.
+ */
+package me.rexlmanu.testplugin;
+
+import me.rexlmanu.testplugin.commands.FindCommand;
+import net.md_5.bungee.api.ProxyServer;
+import net.md_5.bungee.api.plugin.Plugin;
+
+/******************************************************************************************
+ *    Urheberrechtshinweis                                                                *
+ *    Copyright © Emmanuel Lampe 2019                                                  *
+ *    Erstellt: 31.01.2019 / 16:04                                               *
+ *                                                                                        *
+ *    Alle Inhalte dieses Quelltextes sind urheberrechtlich geschützt.                    *
+ *    Das Urheberrecht liegt, soweit nicht ausdrücklich anders gekennzeichnet,            *
+ *    bei Emmanuel Lampe. Alle Rechte vorbehalten.                                        *
+ *                                                                                        * 
+ *    Jede Art der Vervielfältigung, Verbreitung, Vermietung, Verleihung,                 *
+ *    öffentlichen Zugänglichmachung oder andere Nutzung                                  *
+ *    bedarf der ausdrücklichen, schriftlichen Zustimmung von Emmanuel Lampe.             *
+ ******************************************************************************************/
+
+public final class TestPlugin extends Plugin {
+
+    @Override
+    public void onEnable() {
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new FindCommand());
+    }
+}
